@@ -31,12 +31,12 @@ body {
 .side-menu {
   position: fixed;
   top: 0;
-  right: -250px; /* Move menu off-screen to the right */
+  right: -230px; /* Hide menu fully, including shadow */
   left: auto;
   width: 220px;
   height: 100%;
   background: #111;
-  box-shadow: -2px 0 8px rgba(0,0,0,0.3); /* Shadow on left side */
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
   transition: right 0.3s;
   z-index: 1000;
   padding-top: 4rem;
