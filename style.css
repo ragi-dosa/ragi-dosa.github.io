@@ -40,6 +40,8 @@ body {
   transition: right 0.3s;
   z-index: 1000;
   padding-top: 4rem;
+  padding-left: 1.5rem;   /* Add left padding */
+  padding-right: 1.5rem;  /* Add right padding */
 }
 .side-menu.open {
   right: 0;
