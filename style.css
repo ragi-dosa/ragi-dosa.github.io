@@ -31,7 +31,7 @@ body {
 .side-menu {
   position: fixed;
   top: 0;
-  right: -230px; /* Hide menu fully, including shadow */
+  right: -240px; /* Hide menu and shadow completely */
   left: auto;
   width: 220px;
   height: 100%;
