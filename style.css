@@ -16,7 +16,8 @@ body {
 #menu-btn {
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  right: 1rem; /* Move button to right */
+  left: auto;
   z-index: 1001;
   background: #222;
   color: #fff;
@@ -27,28 +28,19 @@ body {
   border-radius: 4px;
   transition: background 0.2s;
 }
-#menu-btn:hover {
-  background: #444;
-}
 
 .side-menu {
   position: fixed;
   top: 0;
-  left: -250px;
+  right: -250px; /* Move menu off-screen to the right */
+  left: auto;
   width: 220px;
   height: 100%;
   background: #111;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
-  transition: left 0.3s;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3); /* Shadow on left side */
+  transition: right 0.3s;
   z-index: 1000;
   padding-top: 4rem;
 }
 .side-menu.open {
-  left: 0;
-}
-
-.side-menu .menu {
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-left: 1rem;
-}
+  right: 0;
