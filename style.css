@@ -7,3 +7,8 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+body {
+  background-color: black;
+  color: white;
+}
