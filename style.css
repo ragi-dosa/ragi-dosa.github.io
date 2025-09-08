@@ -12,21 +12,43 @@ body {
   background-color: black;
   color: white;
 }
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem 0;
-  display: flex;
-  gap: 2rem;
-}
 
-.menu li a {
-  color: white;
-  text-decoration: none;
+#menu-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
   font-size: 1.2rem;
-  transition: color 0.2s;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+#menu-btn:hover {
+  background: #444;
 }
 
-.menu li a:hover {
-  color: #ff9800;
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #111;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+  transition: left 0.3s;
+  z-index: 1000;
+  padding-top: 4rem;
+}
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu .menu {
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 1rem;
 }
