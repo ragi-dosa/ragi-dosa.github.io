@@ -24,7 +24,7 @@ body {
   border: none;
   padding: 0.7rem 1.2rem;
   font-size: 1.2rem;
-  cursor: pointer;
+  cursor: pointer;wd
   border-radius: 4px;
   transition: background 0.2s;
 }
@@ -44,3 +44,4 @@ body {
 }
 .side-menu.open {
   right: 0;
+}
